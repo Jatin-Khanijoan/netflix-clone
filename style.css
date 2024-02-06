@@ -132,9 +132,10 @@ nav img {
 
 .email {
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 .first {
@@ -159,7 +160,7 @@ section.first>div {
 }
 
 .secImg img {
-    width: 555px;
+    width: 35vw;
     position: relative;
     z-index: 10;
 }
@@ -168,7 +169,24 @@ section.first>div {
   position: absolute;
   top: 51px;
   right: 0;
-  width: 555px;
+  overflow: hidden;
+  transform: translate(-19%, 11%);
+  max-width: 73%;
+    max-height: 54%;
+}
+
+#video-1 {
+  height: 54%;
+  width: 72%;
+  top: 14%;
+}
+
+#video-3 {
+  width: 64%;
+  height: 49%;
+  position: absolute;
+  top: 6%;
+  right: 6%;
 }
 
 
@@ -188,6 +206,52 @@ section.first>div {
     font-weight: 400;
     margin: 1rem 0 0;
 }
+
+.faq-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin: 60px 0 60px 0;
+  text-align: center;
+}
+
+.faq-section h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.questions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 77vw;
+  font-size: 1.5rem;
+  background-color: #2d2d2d;
+  padding: 20px 22px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background-color 0.4s;
+  text-align: start;
+}
+
+.questions:hover {
+  background-color: #414141;
+}
+
+.text>p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin: 30px 0 20px 0;
+}
+
+.plus-icon {
+  width: 35px;
+}
+
+
 
 @media screen and (max-width: 1300px) {
 
